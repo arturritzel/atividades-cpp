@@ -1,1 +1,1 @@
-# c-activities
+atividades propostas em C++
