@@ -31,10 +31,7 @@ Para avaliar de forma mais apropriada, calcula-se a media movel de novos casos/d
 
 A media movel consiste em considerar o valor do dia como a media dos N dias anteriores
 
-Este codigo tem por objetivo analisar os dados referentes a covid-19, identificando o dia de maior crescimento e a tendenciatual
-
-Complete o codigo, seguindo as orientacoes dadas em aula.
-
+Este codigo tem por objetivo analisar os dados referentes a covid-19, identificando o dia de maior crescimento e a tendencia atual
 
 ****************************/
 
