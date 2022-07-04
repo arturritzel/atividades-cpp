@@ -1,10 +1,6 @@
 /*
-Abra um arquivo no formato txt contendo um texto. Analise o conteúdo
-e gere o seguinte relatório (na tela).
-a. Quantidade de caracteres espaço.
-b. Quantidade de linhas do texto.
-c. Quantidade de vogais.
-d. Quantidade de artigos definidos.
+Modifique o exercício para gerar um arquivo de relatório,
+cujo nome é o nome do arquivo aberto acrescido de _rel, mantendo a extensão .txt.
 */
 
 #include <iostream>
