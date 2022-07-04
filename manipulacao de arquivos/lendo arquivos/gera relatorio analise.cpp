@@ -32,9 +32,9 @@ int main()
 {
     cout << "digite o nome do arquivo" << endl;
     cout << "(digite tambem sua extensao. ex: \"texto_exemplo.txt\")" << endl;
-    string arquivo;
-    cin >> arquivo;
-    //string arquivo = "texto_exemplo.txt";
+    //string arquivo;
+    //cin >> arquivo;
+    string arquivo = "texto_exemplo.txt";
 
   ifstream inFile; // inFile é o arquivo de leitura dos dados
 
@@ -52,12 +52,10 @@ int main()
         palavras++;
         //if(strcmp(palavra,"dois") == 0) artigos++;
     }
-    inFile.close();
 
-
-    ///     contando vogais!!
-
-    inFile.open(arquivo, ios::in);
+    /// contando vogais
+    inFile.clear();
+    inFile.seekg(0);
 
     char letra;
     int vogais = 0;
@@ -66,11 +64,9 @@ int main()
                 vogais++;
     }
 
-    inFile.close();
-
-    /// contando linhas!
-
-    inFile.open(arquivo, ios::in);
+    /// contando linhas
+    inFile.clear();
+    inFile.seekg(0);
 
     char linha[MAXCHAR];
     int linhas = 0;
@@ -100,7 +96,7 @@ int main()
     outFile << "quantidade de vogais: " << vogais << endl;
     outFile << "quantidade de artigos definidos: " << "?" << endl;
 
-    cout << endl << "um relatório foi gerado no arquivo " << arquivo << endl;
+    cout << "um relatório foi gerado no arquivo " << arquivo << endl;
 
     outFile.close();
  return 0;
